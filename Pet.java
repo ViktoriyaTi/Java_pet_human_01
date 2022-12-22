@@ -1,12 +1,7 @@
-public class Pet {
-    private String name;
 
+public class Pet extends Animal {
     public Pet(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
+        super(name);
     }
 
     public void hearHuman(Human human) {
@@ -15,7 +10,6 @@ public class Pet {
             comeToHuman();
         } else
             walk();
-
     }
 
     public void comeToHuman() {
@@ -25,4 +19,9 @@ public class Pet {
     public void walk() {
         System.out.println("Питомец гуляет");
     }
+
+    public void eat() {
+        System.out.println("Питомец ест");
+    }
+
 }
