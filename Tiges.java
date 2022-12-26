@@ -1,7 +1,7 @@
 public class Tiges extends Animal implements Huntable {
 
-    public Tiges(String name) {
-        super(name);
+    public Tiges(String name, Integer age) {
+        super(name, age);
     }
 
     @Override
